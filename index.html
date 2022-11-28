@@ -112,7 +112,7 @@
         data () {
             return {
                 results: null,
-                searchTerm: 'azure',
+                searchTerm: '',
                 rating_average: 0.2,
                 availableFacets: [],
                 myfacets: []
@@ -157,7 +157,7 @@
                 return f;
             },
             baseUrl: function(){
-                return `${serviceUrl}/indexes/azuretable-index/docs?api-version=2020-06-30`
+                return `${serviceUrl}/indexes/azuretable-index/docs?api-version=2021-04-30`
             }
         }
     })
